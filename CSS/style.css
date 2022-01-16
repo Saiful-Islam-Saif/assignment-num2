@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap");
+
+/* ========================
+        Common CSS
+======================== */
+* {
+  margin: 0;
+  pad: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #3a3a3a;
+}
+/* ======================= Header Section CSS======================= */
+main {
+  margin: 0 auto;
+  justify-content: center;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 52.2px;
+  align-items: center;
+  margin: 20px 0;
+  padding: ;
+}
+.navigation {
+  display: flex;
+}
+.navigation li {
+  list-style: none;
+  margin: 15px;
+}
+.navigation li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  padding: 10px 10px;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+.navigation li a:hover{
+  background-color: #0A0826;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* ======================= Banner Section CSS ======================= */
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+.banner-left h1 {
+  font-size: 52px;
+}
+.banner-left p {
+  width: 505px;
+  height: 60.9px;
+  line-height: 1.7;
+}
+.primary-btn {
+  outline: 0;
+  border: 0;
+  border-radius: 41px;
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.banner-right img {
+  width: 440px;
+  height: 414px;
+  justify-content: center;
+  align-items: flex-end;
+  transition: width 2s, height 2s, transform 5s;
+}
+.banner-right img:hover{
+  transform: rotate(360deg);
+}
+/* ======================= Brand Logo Section CSS ======================= */
+
+.brand-logo ul {
+  display: flex;
+  justify-content: center;
+}
+.brand-logo ul li {
+  list-style: none;
+  margin: 30px 5px;
+  padding: 10px 10px;
+}
+
+/* ======================= Collection Sectin CSS ======================= */
+.card-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.collection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 24px;
+}
+.product {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 30px 35px rgba(0, 0, 0, 0.4);
+  
+}
+.product .product-banner img {
+  width: 300px;
+  height: 256px;
+}
+.product-info,
+.product-description {
+  padding: 5px;
+}
+
+.course-rating {
+  display: flex;
+  align-items: center;
+}
+.course-rating p {
+  margin: 0 5px;
+  padding: 0 5px;
+}
+.fa-star.filled,
+.half-filled {
+  color: #fb8200;
+  font-size: 18px;
+}
+/* ======================= Video Sectin CSS ======================= */
+.video-main {
+  display: flex;
+  margin: 0 30px;
+  padding: 30px;
+  justify-content: space-between;
+}
+video-main p {
+  font-size: 20px;
+}
+/* ======================= Footer Sectin CSS ======================= */
+.footer-div {
+  margin: 0 auto;
+  height: 220px;
+  width: 100%;
+  color: #fff;
+  background-color: #0a0826;
+  text-align: center;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 30px;
+}
+/* ======================= Responsive CSS ======================= */
+
+@media screen and (max-width: 905px) and (min-width: 500px) {
+  .banner-container {
+    flex-direction: column;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+  }
+  .collection {
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .video {
+    flex-direction: column;
+    grid-template-rows: 1fr 1fr ;
+  }
+}
+@media screen and (min-width: 500px) {
+
+  }
+  .banner-container {
+    flex-direction: column;
+    grid-template-rows: repeat(1, 1fr);
+    padding: 0;
+  }
+  .banner-right img{
+    flex-direction: column;
+  }
+  .video {
+    flex-direction: column;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
